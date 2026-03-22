@@ -1,0 +1,15 @@
+meta {
+  name: Delete Item
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{baseUrl}}/items/{{itemId}}
+  body: none
+  auth: none
+}
+
+vars:pre-request {
+  itemId: seed-001
+}

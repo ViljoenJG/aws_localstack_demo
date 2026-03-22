@@ -1,0 +1,22 @@
+meta {
+  name: Create Item
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/items
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "name": "Amazing name",
+    "description": "Best description you've read all day!!!"
+  }
+}
