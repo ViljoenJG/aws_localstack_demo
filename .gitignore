@@ -1,0 +1,21 @@
+# Terraform
+infra/terraform/.terraform/
+infra/terraform/.build/
+infra/terraform/*.tfstate*
+infra/terraform/.terraform.lock.hcl
+
+# CDK
+infra/cdk/dist/
+infra/cdk/cdk.out/
+
+# Node
+node_modules/
+
+# OS
+.DS_Store
+
+# LocalStack
+volume/
+
+# Secrets
+.env
