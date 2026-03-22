@@ -1,0 +1,28 @@
+{
+  "name": "localstack-demo-cdk",
+  "version": "1.0.0",
+  "bin": {
+    "app": "bin/app.ts"
+  },
+  "scripts": {
+    "build": "tsc",
+    "cdk": "cdk",
+    "local:bootstrap": "cdklocal bootstrap",
+    "local:deploy": "cdklocal deploy --require-approval never",
+    "local:destroy": "cdklocal destroy --force",
+    "aws:bootstrap": "cdk bootstrap --profile admin",
+    "aws:deploy": "cdk deploy --require-approval never",
+    "aws:destroy": "cdk destroy --force"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "^2.170.0",
+    "constructs": "^10.4.0",
+    "source-map-support": "^0.5.21"
+  },
+  "devDependencies": {
+    "aws-cdk": "^2.170.0",
+    "aws-cdk-local": "^3.0.1",
+    "ts-node": "^10.9.0",
+    "typescript": "~5.6.0"
+  }
+}
