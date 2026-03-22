@@ -8,12 +8,12 @@ echo "============================================"
 
 awslocal dynamodb put-item \
   --table-name "$TABLE_NAME" \
-  --item '{"id":{"S":"seed-001"},"name":{"S":"Widget Alpha"},"createdAt":{"S":"2026-01-15T10:00:00Z"}}' \
+  --item '{"id":{"S":"seed-001"},"name":{"S":"EC2 Instance of Courage"},"description": {"S":"A virtual machine that believes in you (t3.micro)"},"createdAt":{"S":"2026-01-15T10:00:00Z"}}' \
   --region "$REGION"
 
 awslocal dynamodb put-item \
   --table-name "$TABLE_NAME" \
-  --item '{"id":{"S":"seed-002"},"name":{"S":"Widget Beta"},"createdAt":{"S":"2026-02-20T14:30:00Z"}}' \
+  --item '{"id":{"S":"seed-002"},"name":{"S":"Route 53 Compass"},"description": {"S":"Points your traffic in the right direction, 100% of the time"},"createdAt":{"S":"2026-02-20T14:30:00Z"}}' \
   --region "$REGION"
 
 echo "Demo data seeded."
