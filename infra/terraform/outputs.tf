@@ -15,5 +15,5 @@ output "dynamodb_table" {
 
 output "localstack_url" {
   description = "LocalStack API URL (for local testing)"
-  value       = "http://localhost:4566/restapis/${aws_api_gateway_rest_api.demo.id}/${var.stage_name}/_user_request_/items"
+  value       = "https://${aws_api_gateway_rest_api.demo.id}.execute-api.localhost.localstack.cloud:4566/${var.stage_name}/"
 }
